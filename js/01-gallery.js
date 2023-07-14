@@ -4,6 +4,7 @@ const galleryContainer = document.querySelector('.gallery');
 
 galleryContainer.addEventListener('click', onModalImage);
 
+
 galleryContainer.innerHTML = galleryItems.map(({ preview, original, description }) =>
     `<div class="gallery__item">
         <a class="gallery__link" href="${original}">
@@ -15,6 +16,7 @@ galleryContainer.innerHTML = galleryItems.map(({ preview, original, description 
             />
         </a>
     </div>`).join("");
+
 
 function onModalImage(event) {
     event.preventDefault();
@@ -36,4 +38,10 @@ function onModalImage(event) {
         }
     }
 }
+
+
+
+
+
+
 

@@ -8,3 +8,7 @@ galleryContainer.innerHTML = galleryItems.map(({preview, original, description})
         </a></li>`).join("");
 
 const lightbox = new SimpleLightbox('.gallery a', { captionDelay: 250 });
+
+
+
+
