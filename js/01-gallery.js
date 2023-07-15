@@ -1,9 +1,11 @@
 import { galleryItems } from './gallery-items.js';
+// Change code below this line
+
+console.log(galleryItems);
 
 const galleryContainer = document.querySelector('.gallery');
 
 galleryContainer.addEventListener('click', onModalImage);
-
 
 galleryContainer.innerHTML = galleryItems.map(({ preview, original, description }) =>
     `<div class="gallery__item">
@@ -16,7 +18,6 @@ galleryContainer.innerHTML = galleryItems.map(({ preview, original, description 
             />
         </a>
     </div>`).join("");
-
 
 function onModalImage(event) {
     event.preventDefault();
@@ -38,10 +39,3 @@ function onModalImage(event) {
         }
     }
 }
-
-
-
-
-
-
-
